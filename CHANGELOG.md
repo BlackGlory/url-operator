@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/BlackGlory/url-operator/compare/v0.2.1...v0.3.0) (2023-02-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* The signatures of `encode`, `decode` changed.
+* Changed `string | URL` => `URL` because `URL` are always absolute URLs
+
+* improve `encode`, `decode` ([baf1da3](https://github.com/BlackGlory/url-operator/commit/baf1da36309e8352535ef85274f61f09853d1e6d))
+* improve signatures ([520ed15](https://github.com/BlackGlory/url-operator/commit/520ed159e2e0cf97e28433dab783eab2a941dcc4))
+
 ### [0.2.1](https://github.com/BlackGlory/url-operator/compare/v0.2.0...v0.2.1) (2023-02-21)
 
 
