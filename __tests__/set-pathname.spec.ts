@@ -1,4 +1,4 @@
-import { setPathname } from '@src/set-pathname'
+import { setPathname } from '@src/set-pathname.js'
 
 test('setPathname', () => {
   const url = new URL('protocol://hostname')

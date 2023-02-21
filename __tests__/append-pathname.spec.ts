@@ -1,4 +1,4 @@
-import { appendPathname } from '@src/append-pathname'
+import { appendPathname } from '@src/append-pathname.js'
 
 describe('appendPathname', () => {
   describe('pathname', () => {

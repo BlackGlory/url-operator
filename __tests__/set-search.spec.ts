@@ -1,4 +1,4 @@
-import { setSearch } from '@src/set-search'
+import { setSearch } from '@src/set-search.js'
 
 test('setSearch', () => {
   const url = new URL('protocol://hostname')

@@ -1,4 +1,4 @@
-import { setSearchParams } from '@src/set-search-params'
+import { setSearchParams } from '@src/set-search-params.js'
 
 test('searchParams', () => {
   const url = new URL('protocol://hostname')

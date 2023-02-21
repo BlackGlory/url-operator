@@ -1,4 +1,4 @@
-import { setPort } from '@src/set-port'
+import { setPort } from '@src/set-port.js'
 
 test('setPort', () => {
   const url = new URL('protocol://hostname')

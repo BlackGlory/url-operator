@@ -1,4 +1,4 @@
-import { setHash } from '@src/set-hash'
+import { setHash } from '@src/set-hash.js'
 
 describe('setHash', () => {
   test('hash starts with `#`', () => {

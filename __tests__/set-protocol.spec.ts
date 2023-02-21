@@ -1,4 +1,4 @@
-import { setProtocol } from '@src/set-protocol'
+import { setProtocol } from '@src/set-protocol.js'
 
 describe('setProtocol', () => {
   test('protocol ends with `:`', () => {

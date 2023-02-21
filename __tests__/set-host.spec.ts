@@ -1,4 +1,4 @@
-import { setHost } from '@src/set-host'
+import { setHost } from '@src/set-host.js'
 
 test('setHost', () => {
   const url = new URL('protocol://hostname')

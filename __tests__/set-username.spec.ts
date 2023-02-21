@@ -1,4 +1,4 @@
-import { setUsername } from '@src/set-username'
+import { setUsername } from '@src/set-username.js'
 
 test('setUsername', () => {
   const url = new URL('protocol://hostname')

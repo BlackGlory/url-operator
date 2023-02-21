@@ -1,4 +1,4 @@
-import { setPassword } from '@src/set-password'
+import { setPassword } from '@src/set-password.js'
 
 test('setPassword', () => {
   const url = new URL('protocol://hostname')
