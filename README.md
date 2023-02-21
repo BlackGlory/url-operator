@@ -73,3 +73,13 @@ function appendSearchParam(
 ```ts
 function setHash(url: string | URL, hash: string): URL
 ```
+
+### encode
+```ts
+function encode(url: string | URL): string
+```
+
+### decode
+```ts
+function decode(url: string | URL): string
+```
