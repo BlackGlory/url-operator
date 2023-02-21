@@ -1,4 +1,8 @@
 # url-operator
+The library constrains URLs by types of the function parameters:
+- A `URL` parameter only accepts an absolute URL.
+- A `string` parameter accepts either an absolute URL or a relative URL.
+
 ## Install
 ```sh
 npm install --save url-operator
@@ -69,10 +73,10 @@ function setHash(url: URL, hash: string): URL
 
 ### encode
 ```ts
-function encode(url: string | URL): string
+function encode(url: string): string
 ```
 
 ### decode
 ```ts
-function decode(url: string | URL): string
+function decode(url: string): string
 ```

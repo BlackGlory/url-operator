@@ -1,5 +1,3 @@
-export function decode(url: string | URL): string {
-  const newURL = new URL(url)
-
-  return decodeURI(newURL.href)
+export function decode(url: string): string {
+  return decodeURI(url)
 }
