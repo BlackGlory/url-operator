@@ -1,4 +1,4 @@
-export function setSearch(url: string | URL, search: string): URL {
+export function setSearch(url: URL, search: string): URL {
   const newURL = new URL(url)
 
   newURL.search = search

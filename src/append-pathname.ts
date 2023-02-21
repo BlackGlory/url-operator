@@ -1,6 +1,6 @@
 import { go } from '@blackglory/prelude'
 
-export function appendPathname(url: string | URL, pathname: string): URL {
+export function appendPathname(url: URL, pathname: string): URL {
   const baseURL = go(() => {
     const baseURL = new URL(url)
     if (!baseURL.pathname.endsWith('/')) {

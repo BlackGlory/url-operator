@@ -1,5 +1,5 @@
 export function appendSearchParam(
-  url: string | URL
+  url: URL
 , name: string
 , value: string | number
 ): URL {

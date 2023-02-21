@@ -1,4 +1,4 @@
-export function setPathname(url: string | URL, pathname: string): URL {
+export function setPathname(url: URL, pathname: string): URL {
   const newURL = new URL(url)
 
   newURL.pathname = pathname

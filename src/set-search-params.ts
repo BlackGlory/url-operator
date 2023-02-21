@@ -1,5 +1,5 @@
 export function setSearchParams(
-  url: string | URL
+  url: URL
 , searchParams: Record<string, string | number>
 ): URL {
   const newURL = new URL(url)
