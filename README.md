@@ -31,6 +31,11 @@ function setPassword(url: URL, password: string): URL
 function setHost(url: URL, host: string): URL
 ```
 
+### setHostname
+```ts
+function setHostname(url: URL, hostname: string): URL
+```
+
 ### setPort
 ```ts
 function setPort(url: URL, port: number): URL
