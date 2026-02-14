@@ -18,6 +18,14 @@ describe('decode', () => {
       expect(result).toBe('protocol://你好世界')
     })
 
+    test('host (special characters)', () => {
+      const url = `protocol://${encodeURIComponent('你好/世界')}`
+
+      const result = decode(url)
+
+      expect(result).toBe(`protocol://你好${encodeURIComponent('/')}世界`)
+    })
+
     test('pathname', () => {
       const url = `protocol://foo/${encodeURIComponent('你好世界')}`
 
@@ -59,11 +67,11 @@ describe('decode', () => {
     })
 
     test('querystring (special characters)', () => {
-      const url = `protocol://foo/?${encodeURIComponent('你好')}=${encodeURIComponent('世/界')}`
+      const url = `protocol://foo/?你${encodeURIComponent('/')}好=${encodeURIComponent('世/界')}`
 
       const result = decode(url)
 
-      expect(result).toBe(`protocol://foo/?你好=世${encodeURIComponent('/')}界`)
+      expect(result).toBe(`protocol://foo/?你${encodeURIComponent('/')}好=世${encodeURIComponent('/')}界`)
     })
 
     test('hash', () => {
@@ -133,11 +141,11 @@ describe('decode', () => {
     })
 
     test('querystring (special characters)', () => {
-      const url = `../?${encodeURIComponent('你好')}=${encodeURIComponent('世/界')}`
+      const url = `../?你${encodeURIComponent('/')}好=${encodeURIComponent('世/界')}`
 
       const result = decode(url)
 
-      expect(result).toBe(`../?你好=世${encodeURIComponent('/')}界`)
+      expect(result).toBe(`../?你${encodeURIComponent('/')}好=世${encodeURIComponent('/')}界`)
     })
 
     test('hash', () => {
