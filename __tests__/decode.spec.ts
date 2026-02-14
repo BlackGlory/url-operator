@@ -3,7 +3,7 @@ import { decode } from '@src/decode.js'
 describe('decode', () => {
   describe('absolute URLs', () => {
     test('URL is not decoded', () => {
-      const url = `protocol://${encodeURI('你好世界')}`
+      const url = `protocol://${encodeURIComponent('你好世界')}`
 
       const result = decode(url)
 
@@ -11,7 +11,7 @@ describe('decode', () => {
     })
 
     test('part of URL is already decoded', () => {
-      const url = `protocol://你好${encodeURI('世界')}`
+      const url = `protocol://你好${encodeURIComponent('世界')}`
 
       const result = decode(url)
 
@@ -21,7 +21,7 @@ describe('decode', () => {
 
   describe('relative URLs', () => {
     test('URL is not decoded', () => {
-      const url = `../${encodeURI('你好世界')}`
+      const url = `../${encodeURIComponent('你好世界')}`
 
       const result = decode(url)
 
@@ -29,7 +29,7 @@ describe('decode', () => {
     })
 
     test('part of URL is already decoded', () => {
-      const url = `../你好${encodeURI('世界')}`
+      const url = `../你好${encodeURIComponent('世界')}`
 
       const result = decode(url)
 
