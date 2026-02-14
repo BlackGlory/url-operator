@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.2](https://github.com/BlackGlory/url-operator/compare/v0.3.1...v0.3.2) (2026-02-14)
+
+
+### Features
+
+* add `setHostname` ([eae5c5a](https://github.com/BlackGlory/url-operator/commit/eae5c5a6875e1031fd32d53076e3f3f6d897fb70))
+
+
+### Bug Fixes
+
+* **encode:** edge cases ([0f8375f](https://github.com/BlackGlory/url-operator/commit/0f8375f4c3e0639dcd9b1ff76c1280d39ce92cbf))
+* **set-host:** remove the port part if the new host does not contain a port part ([2bc0afe](https://github.com/BlackGlory/url-operator/commit/2bc0afe506c208dd64d2e6e341618c019112d8de))
+* **set-protocol:** edge cases ([6877e2a](https://github.com/BlackGlory/url-operator/commit/6877e2ae4da380aa7c0453e733014c935e502e4c))
+
 ### [0.3.1](https://github.com/BlackGlory/url-operator/compare/v0.3.0...v0.3.1) (2023-06-11)
 
 
