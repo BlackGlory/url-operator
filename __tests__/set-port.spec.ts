@@ -5,7 +5,7 @@ test('setPort', () => {
 
   const result = setPort(url, 8080)
 
-  expect(result.port).toBe('8080')
   expect(result).not.toBe(url)
+  expect(result.port).toBe('8080')
   expect(url.href).toBe('protocol://hostname')
 })

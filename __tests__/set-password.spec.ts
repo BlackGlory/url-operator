@@ -5,7 +5,7 @@ test('setPassword', () => {
 
   const result = setPassword(url, 'password')
 
-  expect(result.password).toBe('password')
   expect(result).not.toBe(url)
+  expect(result.password).toBe('password')
   expect(url.href).toBe('protocol://hostname')
 })

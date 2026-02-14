@@ -5,7 +5,7 @@ test('setPathname', () => {
 
   const result = setPathname(url, 'test')
 
-  expect(result.pathname).toBe('/test')
   expect(result).not.toBe(url)
+  expect(result.pathname).toBe('/test')
   expect(url.href).toBe('protocol://hostname')
 })

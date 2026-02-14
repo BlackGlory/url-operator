@@ -5,7 +5,7 @@ test('searchParams', () => {
 
   const result = setSearchParams(url, { param: 'value' })
 
-  expect(result.search).toBe('?param=value')
   expect(result).not.toBe(url)
+  expect(result.search).toBe('?param=value')
   expect(url.href).toBe('protocol://hostname')
 })

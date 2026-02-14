@@ -5,7 +5,7 @@ test('setUsername', () => {
 
   const result = setUsername(url, 'username')
 
-  expect(result.username).toBe('username')
   expect(result).not.toBe(url)
+  expect(result.username).toBe('username')
   expect(url.href).toBe('protocol://hostname')
 })

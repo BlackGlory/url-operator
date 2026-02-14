@@ -6,8 +6,8 @@ describe('setHash', () => {
 
     const result = setHash(url, '#hash')
 
-    expect(result.hash).toBe('#hash')
     expect(result).not.toBe(url)
+    expect(result.hash).toBe('#hash')
     expect(url.href).toBe('protocol://hostname')
   })
 
@@ -16,8 +16,8 @@ describe('setHash', () => {
 
     const result = setHash(url, 'hash')
 
-    expect(result.hash).toBe('#hash')
     expect(result).not.toBe(url)
+    expect(result.hash).toBe('#hash')
     expect(url.href).toBe('protocol://hostname')
   })
 })

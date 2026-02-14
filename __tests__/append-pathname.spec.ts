@@ -7,8 +7,8 @@ describe('appendPathname', () => {
 
       const result = appendPathname(url, '/test')
 
-      expect(result.pathname).toBe('/pathname/test')
       expect(result).not.toBe(url)
+      expect(result.pathname).toBe('/pathname/test')
       expect(url.href).toBe('protocol://hostname/pathname/')
     })
 
@@ -17,8 +17,8 @@ describe('appendPathname', () => {
 
       const result = appendPathname(url, 'test')
 
-      expect(result.pathname).toBe('/pathname/test')
       expect(result).not.toBe(url)
+      expect(result.pathname).toBe('/pathname/test')
       expect(url.href).toBe('protocol://hostname/pathname/')
     })
   })
@@ -29,8 +29,8 @@ describe('appendPathname', () => {
 
       const result = appendPathname(url, 'test')
 
-      expect(result.pathname).toBe('/pathname/test')
       expect(result).not.toBe(url)
+      expect(result.pathname).toBe('/pathname/test')
       expect(url.href).toBe('protocol://hostname/pathname')
     })
 
@@ -39,8 +39,8 @@ describe('appendPathname', () => {
 
       const result = appendPathname(url, 'test')
 
-      expect(result.pathname).toBe('/pathname/test')
       expect(result).not.toBe(url)
+      expect(result.pathname).toBe('/pathname/test')
       expect(url.href).toBe('protocol://hostname/pathname/')
     })
   })
@@ -50,9 +50,9 @@ describe('appendPathname', () => {
 
     const result = appendPathname(url, 'test')
 
+    expect(result).not.toBe(url)
     expect(result.pathname).toBe('/pathname/test')
     expect(result.search).toBe('?name=value')
-    expect(result).not.toBe(url)
     expect(url.href).toBe('protocol://hostname/pathname/?name=value')
   })
 
@@ -61,9 +61,9 @@ describe('appendPathname', () => {
 
     const result = appendPathname(url, 'test')
 
+    expect(result).not.toBe(url)
     expect(result.pathname).toBe('/pathname/test')
     expect(result.hash).toBe('#hash')
-    expect(result).not.toBe(url)
     expect(url.href).toBe('protocol://hostname/pathname/#hash')
   })
 })
