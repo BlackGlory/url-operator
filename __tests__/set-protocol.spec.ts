@@ -6,8 +6,9 @@ describe('setProtocol', () => {
 
     const result = setProtocol(url, 'http:')
 
-    expect(result.protocol).toBe('http:')
     expect(result).not.toBe(url)
+    expect(result.protocol).toBe('http:')
+    expect(result.href).toBe('http://hostname/')
     expect(url.href).toBe('protocol://hostname')
   })
 
@@ -16,8 +17,9 @@ describe('setProtocol', () => {
 
     const result = setProtocol(url, 'http')
 
-    expect(result.protocol).toBe('http:')
     expect(result).not.toBe(url)
+    expect(result.protocol).toBe('http:')
+    expect(result.href).toBe('http://hostname/')
     expect(url.href).toBe('protocol://hostname')
   })
 })
