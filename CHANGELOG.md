@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.3](https://github.com/BlackGlory/url-operator/compare/v0.3.2...v0.3.3) (2026-05-08)
+
+
+### Features
+
+* **set-search-params:** improve the type of `searchParams` ([fedca36](https://github.com/BlackGlory/url-operator/commit/fedca360a6c11439c7cfe4d859c5a21c1c72efec))
+
 ### [0.3.2](https://github.com/BlackGlory/url-operator/compare/v0.3.1...v0.3.2) (2026-02-14)
 
 
