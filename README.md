@@ -63,7 +63,10 @@ function setSearchParam(url: URL, name: string, value: string | number): URL
 
 ### setSearchParams
 ```ts
-function setSearchParams(url: URL, searchParams: Record<string, string | number>): URL
+function setSearchParams(
+  url: URL
+, searchParams: Record<string, string | number | undefined>
+): URL
 ```
 
 ### appendSearchParam
