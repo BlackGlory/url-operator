@@ -31,6 +31,16 @@ describe('appendPathname', () => {
       expect(result.pathname).toBe('/pathname')
       expect(url.href).toBe('protocol://hostname/pathname')
     })
+
+    test('edge: relative pathname', () => {
+      const url = new URL('protocol://hostname/pathname')
+
+      const result = appendPathname(url, '../test')
+
+      expect(result).not.toBe(url)
+      expect(result.pathname).toBe('/test')
+      expect(url.href).toBe('protocol://hostname/pathname')
+    })
   })
 
   describe('url.pathname', () => {

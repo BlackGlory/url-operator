@@ -1,8 +1,6 @@
 export function appendPathname(url: URL, pathname: string): URL {
   const baseURL = new URL(url)
-  if (!baseURL.pathname.endsWith('/')) {
-    baseURL.pathname += '/'
-  }
+  if (!baseURL.pathname.endsWith('/')) baseURL.pathname += '/'
 
   const newURL = new URL(pathname.replace(/^\/+/, ''), baseURL)
   newURL.search = baseURL.search
