@@ -12,7 +12,7 @@ export function setProtocol(url: URL, protocol: string): URL {
 
   const newURL = new URL(
     oldURL.href.replace(
-      /^\S+:/
+      /^[a-z][a-z0-9+\-.]*:/i
     , protocol.endsWith(':')
       ? protocol
       : `${protocol}:`
